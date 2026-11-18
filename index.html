@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Ascent — Your learning journey</title>
+<style>
+:root{--bg:#f6f7f5;--surface:#fff;--ink:#202a27;--muted:#78817d;--line:#e7ebe7;--green:#2e765f;--green2:#e7f1ec;--lime:#d8e9a9;--amber:#f3ead7;--rose:#f5e8e5;--nav:#203b32;--shadow:0 8px 28px rgba(32,58,48,.06);--radius:18px}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{display:grid;grid-template-columns:248px 1fr;min-height:100vh}.sidebar{background:var(--nav);color:#f5f8f5;padding:26px 18px;display:flex;flex-direction:column;gap:26px}.brand{display:flex;align-items:center;gap:11px;padding:0 8px}.brand-mark{width:36px;height:36px;border-radius:12px;background:var(--lime);color:var(--nav);display:grid;place-items:center;font-weight:900}.brand strong{display:block;letter-spacing:.08em;font-size:13px}.brand small{color:#b9c9c0;font-size:11px}.nav-label{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#9fb5aa;padding:0 12px;margin-bottom:7px}.nav{display:grid;gap:5px}.nav button{border:0;background:transparent;color:#d4dfd9;text-align:left;padding:11px 12px;border-radius:11px;display:flex;gap:12px;align-items:center;font-size:13px}.nav button:hover,.nav button.active{background:#315548;color:#fff}.nav .ico{width:18px;text-align:center;font-size:16px}.side-note{margin-top:auto;border:1px solid #466357;border-radius:14px;padding:14px;color:#d9e5de;font-size:12px}.side-note b{display:block;color:#fff;margin-bottom:4px}.main{min-width:0}.topbar{height:72px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.8);display:flex;align-items:center;justify-content:space-between;padding:0 34px;position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}.crumb{font-size:13px;color:var(--muted)}.top-actions{display:flex;align-items:center;gap:10px}.date-pill,.avatar{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 12px;font-size:12px;color:var(--muted)}.avatar{width:34px;height:34px;padding:0;display:grid;place-items:center;background:var(--green2);color:var(--green);font-weight:700}.content{max-width:1320px;margin:0 auto;padding:32px 34px 60px}.page{display:none}.page.active{display:block}.eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--green);font-weight:750}.heading{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin:8px 0 24px}.heading h1{font-size:30px;line-height:1.15;margin:5px 0 7px;letter-spacing:-.04em}.heading p{margin:0;color:var(--muted);font-size:13px}.btn{border:0;border-radius:10px;padding:10px 15px;background:var(--green);color:white;font-size:12px;font-weight:700}.btn:hover{filter:brightness(.95)}.btn.secondary{background:#edf2ee;color:var(--green)}.btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--line)}.grid{display:grid;gap:16px}.stats{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:19px;box-shadow:var(--shadow);min-width:0}.stat-top{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.stat-icon{width:30px;height:30px;border-radius:10px;background:var(--green2);display:grid;place-items:center;color:var(--green)}.stat-value{font-size:27px;letter-spacing:-.04em;font-weight:750;margin:13px 0 2px}.stat-foot{font-size:11px;color:var(--muted)}.dashboard-grid{grid-template-columns:1.45fr 1fr;margin-bottom:17px}.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.section-title h2{font-size:15px;margin:0;letter-spacing:-.02em}.section-title span{font-size:11px;color:var(--muted)}.milestone{padding:13px 0;border-top:1px solid var(--line)}.milestone:first-of-type{border-top:0}.milestone-head{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:9px}.milestone-head strong{font-size:13px}.milestone-head small{display:block;color:var(--muted);font-size:11px}.percent{font-size:12px;font-weight:700;color:var(--green)}.bar{height:7px;background:#edf0ed;border-radius:99px;overflow:hidden}.bar>span{display:block;height:100%;background:var(--green);border-radius:99px;transition:width .25s}.bar.lime>span{background:#9bb66a}.bar.amber>span{background:#c69b52}.habit-list{display:grid;gap:9px}.habit{display:flex;align-items:center;gap:10px;padding:9px 10px;border:1px solid var(--line);border-radius:11px;font-size:12px}.habit input{accent-color:var(--green);width:16px;height:16px}.habit .mins{margin-left:auto;color:var(--muted);font-size:11px}.habit.done{background:#f4f8f5;color:#839089;text-decoration:line-through}.bottom-grid{grid-template-columns:1fr 1fr}.callout{background:#eaf1eb;border:1px solid #dce8df;border-radius:var(--radius);padding:19px}.callout h3{margin:0 0 5px;font-size:15px}.callout p{margin:0;color:#60736a;font-size:12px}.empty{padding:24px;text-align:center;color:var(--muted);font-size:12px}.tag{display:inline-flex;padding:4px 8px;border-radius:99px;background:var(--green2);color:var(--green);font-size:10px;font-weight:700}.tag.amber{background:var(--amber);color:#8a682d}.tag.rose{background:var(--rose);color:#986257}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:17px}.tab{border:1px solid var(--line);background:#fff;color:var(--muted);padding:8px 12px;border-radius:9px;font-size:11px}.tab.active{background:var(--nav);color:white;border-color:var(--nav)}.stage-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px}.stage-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;cursor:pointer;transition:.15s}.stage-card:hover,.stage-card.selected{border-color:#6d9b86;box-shadow:0 0 0 2px #e3efe8}.stage-num{font-size:10px;color:var(--green);font-weight:800;letter-spacing:.1em}.stage-card h3{font-size:14px;line-height:1.3;margin:9px 0 5px}.stage-card p{font-size:11px;color:var(--muted);margin:0 0 14px}.module{border:1px solid var(--line);border-radius:13px;padding:14px;margin:9px 0;background:#fff}.module-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.module-head strong{font-size:13px}.topic-list{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:12px}.topic{display:flex;align-items:flex-start;gap:8px;padding:9px;background:#f8faf8;border-radius:9px;font-size:11px;color:#59645e}.topic input{accent-color:var(--green);margin-top:2px}.criteria{margin-top:15px;padding:15px;border-radius:13px;background:#f6f8f5}.criteria h4{margin:0 0 9px;font-size:12px}.criteria label{display:flex;gap:8px;margin:8px 0;font-size:11px;color:#56635b}.criteria input{accent-color:var(--green)}.two-col{grid-template-columns:1fr 1fr}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.field{display:grid;gap:5px}.field label{font-size:11px;color:var(--muted);font-weight:650}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:10px 11px;background:#fff;color:var(--ink);outline:none;font-size:12px}.field input:focus,.field select:focus,.field textarea:focus{border-color:#6b9a83;box-shadow:0 0 0 3px #e7f1ec}.field textarea{min-height:76px;resize:vertical}.form-actions{display:flex;gap:8px;margin-top:13px}.list-item{border-top:1px solid var(--line);padding:13px 0;display:flex;justify-content:space-between;gap:14px}.list-item:first-child{border-top:0}.list-item strong{font-size:12px}.list-item p{font-size:11px;color:var(--muted);margin:4px 0 0}.item-actions{display:flex;gap:5px;align-items:flex-start}.icon-btn{border:1px solid var(--line);background:#fff;color:var(--muted);border-radius:7px;padding:5px 8px;font-size:11px}.score-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.score-box{background:#f7f9f7;border-radius:12px;padding:13px;text-align:center}.score-box span{display:block;font-size:10px;color:var(--muted)}.score-box strong{font-size:23px}.score-box small{font-size:10px;color:var(--muted)}.chart{height:150px;display:flex;align-items:flex-end;gap:12px;padding:10px 5px 0;border-bottom:1px solid var(--line)}.chart-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;gap:6px}.chart-bar{width:min(34px,70%);background:#8eb5a0;border-radius:7px 7px 0 0;min-height:3px}.chart-col small{font-size:9px;color:var(--muted)}.note{font-size:11px;color:var(--muted);line-height:1.6}.footer{text-align:center;color:#9aa39e;font-size:10px;padding:30px 0 0}.mobile-menu{display:none}
+@media(max-width:1000px){.app{grid-template-columns:205px 1fr}.stats{grid-template-columns:repeat(2,1fr)}.stage-grid{grid-template-columns:1fr}.dashboard-grid{grid-template-columns:1fr}}
+@media(max-width:700px){.app{display:block}.sidebar{position:fixed;z-index:20;left:-260px;top:0;bottom:0;width:248px;transition:left .2s}.sidebar.open{left:0}.mobile-menu{display:inline-flex;border:1px solid var(--line);background:white;border-radius:9px;padding:7px 10px}.topbar{height:60px;padding:0 15px}.content{padding:23px 15px 40px}.heading{align-items:flex-start;flex-direction:column}.heading h1{font-size:26px}.stats{gap:9px}.card{padding:15px}.bottom-grid,.two-col{grid-template-columns:1fr}.topic-list{grid-template-columns:1fr}.score-grid{grid-template-columns:repeat(2,1fr)}.date-pill{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><div class="brand-mark">EA</div><div><strong>ENGLISH ASCENT</strong><small>Your learning journey</small></div></div>
+  <div><div class="nav-label">Workspace</div><nav class="nav">
+    <button class="active" data-page="dashboard"><span class="ico">⌂</span>Dashboard</button>
+    <button data-page="roadmap"><span class="ico">▤</span>Learning roadmap</button>
+    <button data-page="habits"><span class="ico">◷</span>Daily habits</button>
+    <button data-page="vocabulary"><span class="ico">✳</span>Vocabulary bank</button>
+    <button data-page="errors"><span class="ico">⌁</span>Error log</button>
+    <button data-page="ielts"><span class="ico">◎</span>IELTS scores</button>
+  </nav></div>
+  <div class="side-note"><b>One step at a time.</b>Build the ability, not just the streak. Your progress is saved in this browser.</div>
+</aside>
+<main class="main">
+<header class="topbar"><div style="display:flex;align-items:center;gap:10px"><button class="mobile-menu" id="menuBtn">☰</button><span class="crumb" id="crumb">Workspace / Dashboard</span></div><div class="top-actions"><span class="date-pill" id="todayLabel"></span><span class="avatar">E</span></div></header>
+<div class="content">
+<section class="page active" id="page-dashboard">
+  <div class="heading"><div><div class="eyebrow">Your learning overview</div><h1>Good to see you.</h1><p>Small, consistent steps build confident English.</p></div><button class="btn" onclick="showPage('habits')">Start today's study →</button></div>
+  <div class="grid stats">
+    <div class="card"><div class="stat-top"><span>Current stage</span><span class="stat-icon">⌁</span></div><div class="stat-value" id="currentStage">B1 → B2</div><div class="stat-foot">Foundation & grammar mastery</div></div>
+    <div class="card"><div class="stat-top"><span>Study streak</span><span class="stat-icon">♨</span></div><div class="stat-value" id="streak">0 days</div><div class="stat-foot">Consecutive days with a completed habit</div></div>
+    <div class="card"><div class="stat-top"><span>Today's habits</span><span class="stat-icon">✓</span></div><div class="stat-value" id="habitCount">0 / 6</div><div class="stat-foot" id="habitFoot">Your daily study checklist</div></div>
+    <div class="card"><div class="stat-top"><span>Latest IELTS estimate</span><span class="stat-icon">◎</span></div><div class="stat-value" id="bandEstimate">—</div><div class="stat-foot">Based on your saved mock scores</div></div>
+  </div>
+  <div class="grid dashboard-grid">
+    <div class="card"><div class="section-title"><h2>Your learning journey</h2><span id="overallProgress">0% mastered</span></div><div id="dashboardMilestones"></div><p class="note">Progress is based on curriculum topics you mark as mastered, not time spent studying.</p></div>
+    <div class="card"><div class="section-title"><h2>Today's focus</h2><span id="habitDate"></span></div><div class="habit-list" id="dashboardHabits"></div><div style="margin-top:13px"><button class="btn secondary" onclick="showPage('habits')">View daily planner →</button></div></div>
+  </div>
+  <div class="grid bottom-grid">
+    <div class="callout"><h3>🎯 Your target: IELTS Band 8.0</h3><p>Build a strong foundation, develop natural fluency, then sharpen your exam performance. Your score estimate will appear after you enter a mock test.</p></div>
+    <div class="card"><div class="section-title"><h2>Recent learning activity</h2><span>Latest entries</span></div><div id="recentActivity" class="note">Your completed habits, vocabulary and mock tests will appear here.</div></div>
+  </div>
+</section>
+
+<section class="page" id="page-roadmap">
+  <div class="heading"><div><div class="eyebrow">Your curriculum</div><h1>Learning roadmap</h1><p>Three milestones from strong foundations to IELTS exam readiness.</p></div><span class="tag">B1 → C1 → Band 8.0</span></div>
+  <div class="stage-grid" id="stageCards"></div>
+  <div class="card"><div class="section-title"><h2 id="stageTitle">Milestone curriculum</h2><span id="stageMeta"></span></div><div id="stageModules"></div><div class="criteria" id="stageCriteria"></div></div>
+</section>
+
+<section class="page" id="page-habits">
+  <div class="heading"><div><div class="eyebrow">Daily consistency</div><h1>Daily habits</h1><p>Check in as you complete each study session. Your progress is saved automatically.</p></div><span class="tag">3 hours / day target</span></div>
+  <div class="grid two-col">
+    <div class="card"><div class="section-title"><h2>Today's checklist</h2><span id="habitProgressText">0 of 6 completed</span></div><div class="habit-list" id="fullHabitList"></div><div style="margin-top:15px"><div class="bar"><span id="habitBar" style="width:0%"></span></div></div></div>
+    <div class="card"><div class="section-title"><h2>Weekly rhythm</h2><span>Habit check-ins</span></div><div id="weekChart" class="chart"></div><p class="note">A day counts toward your streak when at least one habit is checked off. Aim for consistency, not perfection.</p></div>
+  </div>
+  <div class="card" style="margin-top:16px"><div class="section-title"><h2>Study principles</h2><span>Keep the practice active</span></div><div class="grid two-col"><p class="note">• Learn a grammar concept, then create your own examples.<br>• Retrieve vocabulary from memory before checking the meaning.<br>• Listen for meaning, then replay short sections and shadow them.<br>• Speak first without stopping; review errors afterwards.</p><p class="note">• Read authentic material and notice how ideas are organised.<br>• Write regularly and revise for accuracy and clarity.<br>• Review recurring mistakes weekly.<br>• Record actual study time honestly.</p></div></div>
+</section>
+
+<section class="page" id="page-vocabulary">
+  <div class="heading"><div><div class="eyebrow">Build active vocabulary</div><h1>Vocabulary bank</h1><p>Save useful words, collocations, phrasal verbs and expressions in context.</p></div><span class="tag" id="vocabTotal">0 entries</span></div>
+  <div class="grid two-col">
+    <div class="card"><div class="section-title"><h2>Add a vocabulary entry</h2><span>Personal examples matter</span></div>
+      <form id="vocabForm"><div class="form-grid">
+        <div class="field"><label>Word or expression *</label><input id="vTerm" required placeholder="e.g. come up with"></div>
+        <div class="field"><label>Category</label><select id="vCategory"><option>Collocation</option><option>Phrasal verb</option><option>Idiom</option><option>Academic vocabulary</option><option>General vocabulary</option><option>Sentence pattern</option></select></div>
+        <div class="field"><label>Meaning *</label><input id="vMeaning" required placeholder="Think of an idea"></div>
+        <div class="field"><label>Topic</label><input id="vTopic" placeholder="Problem-solving"></div>
+        <div class="field" style="grid-column:1/-1"><label>Example sentence</label><textarea id="vExample" placeholder="I need to come up with a practical solution."></textarea></div>
+        <div class="field" style="grid-column:1/-1"><label>Your own sentence</label><textarea id="vPersonal" placeholder="Write a sentence about your own life..."></textarea></div>
+      </div><div class="form-actions"><button class="btn">Save entry</button></div></form>
+    </div>
+    <div class="card"><div class="section-title"><h2>Review your vocabulary</h2><span>Active recall</span></div><p class="note">Try to remember the meaning and make your own sentence before revealing the answer. Mark entries as learning, familiar or mastered.</p><div id="vocabReview" class="empty">Your saved vocabulary will appear here.</div></div>
+  </div>
+  <div class="card" style="margin-top:16px"><div class="section-title"><h2>Saved expressions</h2><input id="vSearch" placeholder="Search vocabulary..." style="max-width:220px;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:11px"></div><div id="vocabList"></div></div>
+</section>
+
+<section class="page" id="page-errors">
+  <div class="heading"><div><div class="eyebrow">Learn from patterns</div><h1>Error log</h1><p>Track mistakes, understand why they happen and check whether they return.</p></div><span class="tag" id="errorTotal">0 errors</span></div>
+  <div class="grid two-col">
+    <div class="card"><div class="section-title"><h2>Record a mistake</h2><span>Be specific</span></div>
+      <form id="errorForm"><div class="form-grid">
+        <div class="field"><label>Category</label><select id="eCategory"><option>Grammar</option><option>Vocabulary</option><option>Preposition</option><option>Word choice</option><option>Pronunciation</option><option>Coherence</option><option>Listening</option><option>Reading</option></select></div>
+        <div class="field"><label>Source</label><select id="eSource"><option>Speaking</option><option>Writing</option><option>Grammar exercise</option><option>Listening</option><option>Reading</option></select></div>
+        <div class="field" style="grid-column:1/-1"><label>Original mistake *</label><textarea id="eOriginal" required placeholder="I am agree with this opinion."></textarea></div>
+        <div class="field" style="grid-column:1/-1"><label>Corrected version *</label><textarea id="eCorrected" required placeholder="I agree with this opinion."></textarea></div>
+        <div class="field" style="grid-column:1/-1"><label>Why was it wrong?</label><textarea id="eExplanation" placeholder="Agree is a verb, so it does not take am."></textarea></div>
+      </div><div class="form-actions"><button class="btn">Save mistake</button></div></form>
+    </div>
+    <div class="card"><div class="section-title"><h2>Your review focus</h2><span>Recurring patterns</span></div><div id="errorInsights" class="empty">Add mistakes to identify patterns.</div></div>
+  </div>
+  <div class="card" style="margin-top:16px"><div class="section-title"><h2>All recorded errors</h2><span>Review and resolve</span></div><div id="errorList"></div></div>
+</section>
+
+<section class="page" id="page-ielts">
+  <div class="heading"><div><div class="eyebrow">Academic examination practice</div><h1>IELTS score tracker</h1><p>Record mock tests and monitor your performance across all four skills.</p></div><span class="tag">Target overall 8.0</span></div>
+  <div class="grid two-col">
+    <div class="card"><div class="section-title"><h2>Record a mock test</h2><span>Use assessed scores</span></div>
+      <form id="mockForm"><div class="form-grid">
+        <div class="field"><label>Test date</label><input type="date" id="mDate" required></div>
+        <div class="field"><label>Test label</label><input id="mLabel" placeholder="e.g. Cambridge 18, Test 2"></div>
+        <div class="field"><label>Listening band</label><select id="mL" required><option value="">Select</option></select></div>
+        <div class="field"><label>Reading band</label><select id="mR" required><option value="">Select</option></select></div>
+        <div class="field"><label>Writing band</label><select id="mW" required><option value="">Select</option></select></div>
+        <div class="field"><label>Speaking band</label><select id="mS" required><option value="">Select</option></select></div>
+        <div class="field" style="grid-column:1/-1"><label>Feedback / next actions</label><textarea id="mFeedback" placeholder="What went well? What needs work?"></textarea></div>
+      </div><div class="form-actions"><button class="btn">Save mock test</button></div></form>
+    </div>
+    <div class="card"><div class="section-title"><h2>Latest performance</h2><span>Most recent mock</span></div><div id="latestScores" class="empty">No mock tests recorded yet. Your score will appear after your first entry.</div><p class="note" style="margin-top:12px">IELTS overall band is calculated from the average of Listening, Reading, Writing and Speaking, rounded to the nearest half band. This tracker does not independently assess writing or speaking.</p></div>
+  </div>
+  <div class="grid two-col" style="margin-top:16px">
+    <div class="card"><div class="section-title"><h2>Score history</h2><span>Overall band</span></div><div id="scoreChart" class="chart"></div></div>
+    <div class="card"><div class="section-title"><h2>Band 8 readiness checklist</h2><span>Manual self-review</span></div><div id="readiness"></div></div>
+  </div>
+  <div class="card" style="margin-top:16px"><div class="section-title"><h2>Mock test history</h2><span>Saved assessments</span></div><div id="mockList"></div></div>
+</section>
+<div class="footer">ENGLISH ASCENT · Your learning data stays in this browser on this device.</div>
+</div></main></div>
+<script>
+const KEY='english-ascent-v1';
+const defaultState={habits:{},topics:{},vocab:[],errors:[],mocks:[],readiness:{}};
+let state=loadState(),selectedStage=0;
+const stages=[
+ {name:'Foundation & Grammar Mastery',level:'B1 → B2',duration:'10–12 weeks',desc:'Build reliable grammar knowledge and accurate sentence construction.',modules:[
+  ['Parts of speech',['Nouns, verbs, adjectives and adverbs','Pronouns, determiners and articles','Prepositions and conjunctions','Word forms and functions']],
+  ['Sentence structure',['Subjects, predicates and sentence elements','Subject–verb agreement','Core sentence patterns','Simple, compound and complex sentences']],
+  ['Verb system',['Present, past and future forms','Perfect and continuous aspects','Auxiliary and modal verbs','Passive voice and reported speech']],
+  ['Phrases and clauses',['Noun, verb, adjective and adverb phrases','Independent and dependent clauses','Relative clauses','Noun and adverbial clauses']],
+  ['Advanced grammar and cohesion',['Conditionals and hypothetical meaning','Gerunds and infinitives','Articles and quantifiers','Linking, reference and paragraph cohesion']]
+ ],criteria:['Score at least 85% on cumulative grammar assessments.','Construct varied sentence types independently.','Write a coherent 200–250-word text with controlled grammar.','Speak for 3–5 minutes about familiar topics.','Identify and correct recurring grammatical errors.'],habits:['Grammar concept and examples','Grammar exercises and sentence production','Vocabulary retrieval','Active listening','English reading','Speaking and writing practice']},
+ {name:'Natural Fluency & Active Vocabulary',level:'B2 → C1',duration:'12–16 weeks',desc:'Retrieve language faster and communicate naturally, precisely and confidently.',modules:[
+  ['Active vocabulary',['Collocations and word families','Synonyms, nuance and register','Phrasal verbs in context','Idioms and natural expressions']],
+  ['Speaking fluency',['Thinking directly in English','Extending and organising answers','Hesitation and repair strategies','Connected speech, stress and intonation']],
+  ['Listening and pronunciation',['Natural-speed conversations','Different English accents','Implied meaning and speaker attitude','Shadowing and pronunciation review']],
+  ['Reading and argumentation',['Long-form articles and opinion pieces','Main ideas, inference and tone','Comparing viewpoints','Explaining and defending opinions']],
+  ['Advanced writing',['Paragraph unity and progression','Cohesion and referencing','Precision and sentence variety','Formal, neutral and conversational register']]
+ ],criteria:['Demonstrate consistent B2 performance with emerging C1 abilities.','Speak for 8–10 minutes on familiar and less familiar subjects.','Express opinions without translating every sentence.','Use collocations and phrasal verbs appropriately.','Understand authentic English at natural speed.','Write coherent 250–300-word arguments.'],habits:['Learn and retrieve useful expressions','Listen to authentic English','Read an article and note language','Speak spontaneously','Shadow a short audio segment','Write an opinion paragraph']},
+ {name:'IELTS Band 8 Strategy & Practice',level:'IELTS Academic',duration:'12–16 weeks',desc:'Turn your English ability into consistent, well-managed examination performance.',modules:[
+  ['Listening',['Predict answers and follow signposting','Recognise paraphrase and distractors','Maps, multiple choice and completion','Spelling, word limits and review']],
+  ['Reading',['Skimming and scanning','Matching headings and information','True / False / Not Given','Inference, paraphrase and time management']],
+  ['Writing Task 1',['Charts, tables and comparisons','Maps and process diagrams','Overview and key features','Accurate reporting and time management']],
+  ['Writing Task 2',['Opinion and discussion essays','Advantages, problems and solutions','Two-part questions','Argument development and examples']],
+  ['Speaking',['Part 1: concise natural answers','Part 2: long turn and story structure','Part 3: abstract discussion','Fluency, vocabulary, grammar and pronunciation']]
+ ],criteria:['Complete multiple full-length timed mock examinations.','Reach an overall mock average around Band 8.0 consistently.','Avoid any individual skill falling substantially below target.','Obtain qualified feedback on Writing and Speaking.','Demonstrate reliable timing and exam-day readiness.'],habits:['Listening timed practice','Reading timed practice','Writing Task 1 or Task 2','Speaking simulation','Review errors and feedback','Vocabulary and paraphrase review']}
+];
+const habitDefs=[
+ {name:'Grammar / IELTS skill focus',mins:40},{name:'Vocabulary and active recall',mins:25},{name:'Listening practice',mins:30},{name:'Reading practice',mins:25},{name:'Speaking practice',mins:35},{name:'Writing practice',mins:25}
+];
+function loadState(){try{return {...defaultState,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch(e){return structuredClone(defaultState)}}
+function save(){localStorage.setItem(KEY,JSON.stringify(state));renderAll()}
+function today(){let d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function showPage(name){document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id==='page-'+name));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.page===name));document.getElementById('crumb').textContent='Workspace / '+({dashboard:'Dashboard',roadmap:'Learning roadmap',habits:'Daily habits',vocabulary:'Vocabulary bank',errors:'Error log',ielts:'IELTS scores'}[name]);document.getElementById('sidebar').classList.remove('open');}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
+document.getElementById('menuBtn').onclick=()=>document.getElementById('sidebar').classList.toggle('open');
+document.getElementById('todayLabel').textContent=new Date().toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric',year:'numeric'});
+document.getElementById('habitDate').textContent=new Date().toLocaleDateString(undefined,{month:'short',day:'numeric'});
+function bandAverage(m){let avg=(m.l+m.r+m.w+m.s)/4;return Math.round(avg*2)/2}
+function masteredCount(){return Object.values(state.topics).filter(Boolean).length}
+function topicCount(){return stages.reduce((a,s)=>a+s.modules.reduce((b,m)=>b+m[1].length,0),0)}
+function stageStats(i){let total=stages[i].modules.reduce((a,m)=>a+m[1].length,0),done=0;stages[i].modules.forEach((m,mi)=>m[1].forEach((t,ti)=>{if(state.topics[`${i}-${mi}-${ti}`])done++}));return {total,done,pct:total?Math.round(done/total*100):0}}
+function habitDone(date=today()){return state.habits[date]||[]}
+function streak(){let n=0,d=new Date();while(true){let k=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;if(!habitDone(k).length)break;n++;d.setDate(d.getDate()-1)}return n}
+function renderDashboard(){
+ let allDone=stages.reduce((a,s,i)=>a+stageStats(i).done,0),pct=Math.round(allDone/topicCount()*100);
+ document.getElementById('overallProgress').textContent=pct+'% mastered';
+ document.getElementById('streak').textContent=streak()+' days';
+ document.getElementById('habitCount').textContent=habitDone().length+' / 6';
+ document.getElementById('habitFoot').textContent=Math.round(habitDone().length/6*100)+"% of today\'s habits";
+ document.getElementById('bandEstimate').textContent=state.mocks.length?bandAverage(state.mocks[state.mocks.length-1]).toFixed(1):'—';
+ let current=stages.findIndex((s,i)=>stageStats(i).pct<100);if(current<0)current=2;
+ document.getElementById('currentStage').textContent=stages[current].level;
+ document.getElementById('dashboardMilestones').innerHTML=stages.map((s,i)=>{let x=stageStats(i);return `<div class="milestone"><div class="milestone-head"><div><strong>${s.name}</strong><small>${s.level} · ${s.duration}</small></div><span class="percent">${x.pct}%</span></div><div class="bar ${i===1?'lime':i===2?'amber':''}"><span style="width:${x.pct}%"></span></div></div>`}).join('');
+ document.getElementById('dashboardHabits').innerHTML=habitDefs.map((h,i)=>`<label class="habit ${habitDone().includes(i)?'done':''}"><input type="checkbox" ${habitDone().includes(i)?'checked':''} onchange="toggleHabit(${i},this.checked)"><span>${h.name}</span><span class="mins">${h.mins}m</span></label>`).join('');
+ let activity=[];state.vocab.slice(-2).reverse().forEach(v=>activity.push(`Saved vocabulary: <b>${esc(v.term)}</b>`));state.errors.slice(-2).reverse().forEach(e=>activity.push(`Logged an error: <b>${esc(e.category)}</b>`));state.mocks.slice(-2).reverse().forEach(m=>activity.push(`Recorded mock test: <b>Band ${bandAverage(m).toFixed(1)}</b>`));
+ document.getElementById('recentActivity').innerHTML=activity.length?activity.map(x=>`<div style="padding:6px 0;border-bottom:1px solid var(--line)">${x}</div>`).join(''):'Your completed habits, vocabulary and mock tests will appear here.';
+}
+function toggleHabit(i,on){let a=habitDone().filter(x=>x!==i);if(on)a.push(i);state.habits[today()]=a;save()}
+function renderRoadmap(){
+ document.getElementById('stageCards').innerHTML=stages.map((s,i)=>{let x=stageStats(i);return `<div class="stage-card ${selectedStage===i?'selected':''}" onclick="selectStage(${i})"><div class="stage-num">MILESTONE 0${i+1} · ${s.level}</div><h3>${s.name}</h3><p>${s.duration}</p><div class="bar"><span style="width:${x.pct}%"></span></div><div style="display:flex;justify-content:space-between;margin-top:7px;font-size:10px;color:var(--muted)"><span>${x.done}/${x.total} topics mastered</span><b>${x.pct}%</b></div></div>`}).join('');
+ let s=stages[selectedStage],x=stageStats(selectedStage);
+ document.getElementById('stageTitle').textContent=s.name;document.getElementById('stageMeta').textContent=s.level+' · '+s.duration;
+ document.getElementById('stageModules').innerHTML=s.modules.map((m,mi)=>`<div class="module"><div class="module-head"><strong>${mi+1}. ${m[0]}</strong><span class="tag">${m[1].filter((t,ti)=>state.topics[`${selectedStage}-${mi}-${ti}`]).length}/${m[1].length} mastered</span></div><div class="topic-list">${m[1].map((t,ti)=>`<label class="topic"><input type="checkbox" ${state.topics[`${selectedStage}-${mi}-${ti}`]?'checked':''} onchange="toggleTopic('${selectedStage}-${mi}-${ti}',this.checked)"><span>${t}</span></label>`).join('')}</div></div>`).join('');
+ document.getElementById('stageCriteria').innerHTML=`<h4>Level-up criteria · ${x.done}/${x.total} curriculum topics mastered</h4>${s.criteria.map((c,i)=>`<label><input type="checkbox" ${state.readiness[`${selectedStage}-${i}`]?'checked':''} onchange="toggleReady('${selectedStage}-${i}',this.checked)"><span>${c}</span></label>`).join('')}<p class="note">These are personal progression checks, not official CEFR or IELTS certification. Move forward when you can demonstrate the skills, not simply when every checkbox is ticked.</p>`;
+}
+function selectStage(i){selectedStage=i;renderRoadmap()}
+function toggleTopic(k,v){state.topics[k]=v;save()}
+function toggleReady(k,v){state.readiness[k]=v;save()}
+function renderHabits(){
+ document.getElementById('fullHabitList').innerHTML=habitDefs.map((h,i)=>`<label class="habit ${habitDone().includes(i)?'done':''}"><input type="checkbox" ${habitDone().includes(i)?'checked':''} onchange="toggleHabit(${i},this.checked)"><span>${h.name}</span><span class="mins">${h.mins} min</span></label>`).join('');
+ let n=habitDone().length;document.getElementById('habitProgressText').textContent=`${n} of 6 completed`;document.getElementById('habitBar').style.width=(n/6*100)+'%';
+ let days=[];for(let j=6;j>=0;j--){let d=new Date();d.setDate(d.getDate()-j);let k=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;days.push({label:d.toLocaleDateString(undefined,{weekday:'short'}),v:(state.habits[k]||[]).length})}
+ document.getElementById('weekChart').innerHTML=days.map(d=>`<div class="chart-col"><div class="chart-bar" style="height:${Math.max(3,d.v/6*100)}%"></div><small>${d.label}</small></div>`).join('');
+}
+document.getElementById('vocabForm').addEventListener('submit',e=>{e.preventDefault();state.vocab.push({id:Date.now(),term:vTerm.value.trim(),category:vCategory.value,meaning:vMeaning.value.trim(),topic:vTopic.value.trim(),example:vExample.value.trim(),personal:vPersonal.value.trim(),status:'Learning',created:today()});e.target.reset();save()});
+document.getElementById('vSearch').addEventListener('input',renderVocab);
+function renderVocab(){
+ document.getElementById('vocabTotal').textContent=state.vocab.length+' entries';
+ let q=(document.getElementById('vSearch').value||'').toLowerCase(),items=state.vocab.filter(v=>(v.term+' '+v.meaning+' '+v.topic).toLowerCase().includes(q));
+ document.getElementById('vocabList').innerHTML=items.length?items.slice().reverse().map(v=>`<div class="list-item"><div><strong>${esc(v.term)}</strong> <span class="tag">${esc(v.category)}</span><p>${esc(v.meaning)}${v.topic?' · '+esc(v.topic):''}</p>${v.example?`<p><i>${esc(v.example)}</i></p>`:''}${v.personal?`<p>Your sentence: ${esc(v.personal)}</p>`:''}</div><div class="item-actions"><select aria-label="Review status" onchange="setVocabStatus(${v.id},this.value)" style="font-size:10px;border:1px solid var(--line);border-radius:7px;padding:5px"><option ${v.status==='Learning'?'selected':''}>Learning</option><option ${v.status==='Familiar'?'selected':''}>Familiar</option><option ${v.status==='Mastered'?'selected':''}>Mastered</option></select><button class="icon-btn" onclick="deleteItem('vocab',${v.id})">Delete</button></div></div>`).join(''):'<div class="empty">No matching entries yet.</div>';
+ let v=state.vocab.find(x=>x.status!=='Mastered');document.getElementById('vocabReview').innerHTML=v?`<div style="font-size:16px;font-weight:750;margin:12px 0">${esc(v.term)}</div><span class="tag">${esc(v.category)}</span><p class="note" style="margin-top:12px">Think of the meaning and create your own sentence before revealing it.</p><button class="btn secondary" onclick="revealVocab(${v.id})">Reveal meaning</button><div id="revealMeaning" class="note" style="margin-top:10px"></div>`:'<div class="empty">Add an entry to begin your review, or all entries are marked mastered.</div>';
+}
+function revealVocab(id){let v=state.vocab.find(x=>x.id===id);document.getElementById('revealMeaning').innerHTML=`<b>${esc(v.meaning)}</b><br>${esc(v.example||'Add an example sentence to strengthen recall.')}`}
+function setVocabStatus(id,status){let v=state.vocab.find(x=>x.id===id);if(v){v.status=status;save()}}
+document.getElementById('errorForm').addEventListener('submit',e=>{e.preventDefault();state.errors.push({id:Date.now(),category:eCategory.value,source:eSource.value,original:eOriginal.value.trim(),corrected:eCorrected.value.trim(),explanation:eExplanation.value.trim(),resolved:false,date:today()});e.target.reset();save()});
+function renderErrors(){
+ document.getElementById('errorTotal').textContent=state.errors.length+' errors';
+ let counts={};state.errors.forEach(e=>counts[e.category]=(counts[e.category]||0)+1);
+ let sorted=Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+ document.getElementById('errorInsights').innerHTML=sorted.length?sorted.slice(0,4).map(([k,v])=>`<div style="display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line);font-size:12px"><span>${esc(k)}</span><b>${v} ${v===1?'entry':'entries'}</b></div>`).join('')+'<p class="note">Use recurring categories to decide what to review next.</p>':'<div class="empty">Add mistakes to identify patterns.</div>';
+ document.getElementById('errorList').innerHTML=state.errors.length?state.errors.slice().reverse().map(e=>`<div class="list-item"><div style="flex:1"><span class="tag ${e.resolved?'':'rose'}">${esc(e.category)}</span> <span class="note">${esc(e.source)} · ${e.date}</span><p><b>Original:</b> ${esc(e.original)}</p><p><b>Correction:</b> ${esc(e.corrected)}</p>${e.explanation?`<p>${esc(e.explanation)}</p>`:''}</div><div class="item-actions"><button class="icon-btn" onclick="toggleResolved(${e.id})">${e.resolved?'Reopen':'Resolved'}</button><button class="icon-btn" onclick="deleteItem('errors',${e.id})">Delete</button></div></div>`).join(''):'<div class="empty">No errors recorded. Add a mistake whenever you notice a pattern worth learning from.</div>';
+}
+function toggleResolved(id){let e=state.errors.find(x=>x.id===id);if(e)e.resolved=!e.resolved;save()}
+function deleteItem(type,id){if(!confirm('Delete this entry?'))return;state[type]=state[type].filter(x=>x.id!==id);save()}
+for(let id of ['mL','mR','mW','mS']){let s=document.getElementById(id);for(let x=4;x<=9;x+=.5){let o=document.createElement('option');o.value=x;o.textContent=x.toFixed(1);s.appendChild(o)}}
+document.getElementById('mDate').value=today();
+document.getElementById('mockForm').addEventListener('submit',e=>{e.preventDefault();state.mocks.push({id:Date.now(),date:mDate.value,label:mLabel.value.trim(),l:+mL.value,r:+mR.value,w:+mW.value,s:+mS.value,feedback:mFeedback.value.trim()});e.target.reset();mDate.value=today();save()});
+function renderIELTS(){
+ let latest=state.mocks[state.mocks.length-1];
+ document.getElementById('latestScores').innerHTML=latest?`<div class="score-grid">${[['Listening',latest.l],['Reading',latest.r],['Writing',latest.w],['Speaking',latest.s]].map(([n,v])=>`<div class="score-box"><span>${n}</span><strong>${v.toFixed(1)}</strong><small>Band</small></div>`).join('')}</div><div style="display:flex;justify-content:space-between;align-items:center;margin-top:17px"><span class="note">Overall estimated band</span><strong style="font-size:28px">${bandAverage(latest).toFixed(1)}</strong></div><p class="note">${esc(latest.label||'Mock test')} · ${latest.date}</p>${latest.feedback?`<p class="note">${esc(latest.feedback)}</p>`:''}`:'<div class="empty">No mock tests recorded yet. Your score will appear after your first entry.</div>';
+ let sorted=state.mocks.slice().sort((a,b)=>a.date.localeCompare(b.date)).slice(-8);
+ document.getElementById('scoreChart').innerHTML=sorted.length?sorted.map(m=>`<div class="chart-col"><div class="chart-bar" title="Band ${bandAverage(m).toFixed(1)}" style="height:${bandAverage(m)/9*100}%"></div><small>${m.date.slice(5)}</small></div>`).join(''):'<div class="empty" style="width:100%">Your score history will appear here.</div>';
+ let checks=['Listening performance is consistently near target.','Reading performance is consistently near target.','Writing has been reviewed against all four IELTS criteria.','Speaking has been assessed against all four IELTS criteria.','Several full timed mock tests are near Band 8.0.','I can complete every section within the time limit.'];
+ document.getElementById('readiness').innerHTML=checks.map((c,i)=>`<label style="display:flex;gap:8px;margin:10px 0;font-size:11px"><input type="checkbox" ${state.readiness['ielts-'+i]?'checked':''} onchange="toggleReady('ielts-${i}',this.checked)" style="accent-color:var(--green)"><span>${c}</span></label>`).join('');
+ document.getElementById('mockList').innerHTML=state.mocks.length?state.mocks.slice().reverse().map(m=>`<div class="list-item"><div><strong>${esc(m.label||'Mock test')}</strong><p>${m.date} · L ${m.l.toFixed(1)} / R ${m.r.toFixed(1)} / W ${m.w.toFixed(1)} / S ${m.s.toFixed(1)}</p></div><div class="item-actions"><b style="font-size:15px"> ${bandAverage(m).toFixed(1)}</b><button class="icon-btn" onclick="deleteItem('mocks',${m.id})">Delete</button></div></div>`).join(''):'<div class="empty">Your saved mock tests will appear here.</div>';
+}
+function renderAll(){renderDashboard();renderRoadmap();renderHabits();renderVocab();renderErrors();renderIELTS()}
+renderAll();
+</script>
+</body>
+</html>
