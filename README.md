@@ -1,5 +1,5 @@
 # English Ascent
-A personal English-learning tracker designed to help me work towards IELTS Academic Band 8.0.
+A personal English-learning tracker to monitor progress from B1 to C1 and prepare for IELTS Academic. Features include daily study habits, curriculum tracking, a vocabulary bank, grammar error log, and IELTS mock test score tracking.
 
 ## About the Project
 English Ascent is a personal dashboard for organizing and tracking my English-learning journey, from strengthening grammar foundations to developing fluency and preparing for IELTS.
